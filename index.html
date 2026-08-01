@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MessMate | Find your perfect meal, instantly.</title>
+  <meta name="description" content="Live Menus, Seat Availability, and Reviews for students. Stop guessing what's for lunch and start eating better today.">
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, and Material Symbols -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with custom config matching Stitch Project 17051664415263210848 -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#ab3500",
+            "primary-container": "#ff6b35",
+            "on-primary": "#ffffff",
+            "on-primary-container": "#5f1900",
+            "secondary": "#006b5f",
+            "secondary-container": "#76f4e0",
+            "on-secondary": "#ffffff",
+            "on-secondary-container": "#006f63",
+            "tertiary": "#006876",
+            "tertiary-container": "#45a6b7",
+            "background": "#f9f9f9",
+            "surface": "#f9f9f9",
+            "surface-bright": "#ffffff",
+            "surface-container": "#eeeeee",
+            "surface-container-low": "#f3f3f3",
+            "surface-container-lowest": "#ffffff",
+            "on-surface": "#1a1c1c",
+            "on-surface-variant": "#594139",
+            "outline": "#8d7168",
+            "outline-variant": "#e1bfb5"
+          },
+          fontFamily: {
+            display: ["Plus Jakarta Sans", "sans-serif"],
+            body: ["Plus Jakarta Sans", "sans-serif"],
+            label: ["Inter", "sans-serif"]
+          },
+          spacing: {
+            "gutter": "16px",
+            "container-max": "1280px",
+            "margin-desktop": "32px",
+            "margin-mobile": "16px"
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- React 18 & Babel CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-background text-on-surface font-body antialiased selection:bg-primary-container selection:text-white">
+  <!-- React Mount Point -->
+  <div id="root"></div>
+
+  <!-- Data Script -->
+  <script src="data.js"></script>
+
+  <!-- App Script -->
+  <script type="text/babel" src="app.js"></script>
+</body>
+</html>

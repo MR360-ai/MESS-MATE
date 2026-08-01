@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap');
+
+:root {
+  --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-label: 'Inter', sans-serif;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Glass Card styling from Stitch design */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+/* Pulsing dot for Live Menu / Seat indicator */
+@keyframes pulse-dot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 107, 53, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(255, 107, 53, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(255, 107, 53, 0); }
+}
+
+.live-indicator {
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-green-dot {
+  0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 107, 95, 0.7); }
+  70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(0, 107, 95, 0); }
+  100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(0, 107, 95, 0); }
+}
+
+.live-indicator-green {
+  animation: pulse-green-dot 2s infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b35;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ab3500;
+}
+
+/* Elevation Shadow Utilities */
+.shadow-card-subtle {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.04);
+}
+
+.shadow-card-hover {
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.shadow-orange-glow {
+  box-shadow: 0px 4px 20px rgba(255, 107, 53, 0.2);
+}
+
+.shadow-orange-glow-lg {
+  box-shadow: 0px 8px 30px rgba(255, 107, 53, 0.3);
+}
+
+/* Modal Animations */
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
